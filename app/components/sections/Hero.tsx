@@ -20,7 +20,13 @@ export function Hero() {
             <span className="font-label-md text-label-md">Expert Guidance</span>
           </div>
         </div>
-        <button className="rounded-lg bg-primary px-10 py-4 font-h3 text-h3 text-on-primary shadow-lg transition-all hover:brightness-110">Enquire Now</button>
+        <button className="group relative rounded-lg bg-gradient-to-r from-primary to-blue-600 px-10 py-4 font-h3 text-h3 text-on-primary shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-primary/50 hover:scale-105 active:scale-95 overflow-hidden">
+          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-pulse transition-opacity duration-300" />
+          <span className="relative flex items-center justify-center gap-2">
+            Enquire Now
+            <span className="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+          </span>
+        </button>
       </div>
       <div className="relative flex-1">
         <div className="absolute -left-4 -top-4 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />

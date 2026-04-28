@@ -43,7 +43,10 @@ export function LeadForm() {
       <input className="rounded-lg border border-outline-variant px-4 py-3" name="company" placeholder="Company" type="text" />
       <textarea className="md:col-span-2 rounded-lg border border-outline-variant px-4 py-3" name="message" placeholder="Message" rows={4} />
       <div className="md:col-span-2 flex items-center justify-between gap-3">
-        <button className="rounded-lg bg-primary px-6 py-3 font-semibold text-white" type="submit">Submit</button>
+        <button className="group relative rounded-lg bg-gradient-to-r from-primary to-blue-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:shadow-2xl hover:shadow-primary/50 hover:scale-105 active:scale-95 overflow-hidden" type="submit">
+          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-pulse transition-opacity duration-300" />
+          <span className="relative">Submit</span>
+        </button>
         {status ? <p className="text-sm text-on-surface-variant">{status}</p> : null}
       </div>
     </form>
