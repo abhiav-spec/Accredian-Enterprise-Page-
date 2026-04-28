@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useScroll } from '@/hooks/useScroll';
 
 export function Navbar() {
@@ -12,7 +13,14 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between">
-        <span className="text-2xl font-bold tracking-tight text-blue-600 antialiased dark:text-blue-400">EduEnterprise</span>
+        <Image
+          src="/images/icons/logo.webp"
+          alt="Accredian"
+          width={365}
+          height={120}
+          className="h-10 w-auto"
+          priority
+        />
         <div className="hidden gap-8 md:flex">
           <a className="border-b-2 border-blue-600 pb-1 font-bold tracking-tight text-blue-600 antialiased dark:text-blue-400" href="#">Solutions</a>
           <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#">Expertise</a>

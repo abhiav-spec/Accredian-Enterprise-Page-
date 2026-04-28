@@ -79,21 +79,21 @@ export function Benefits() {
             <details className="group rounded-xl border border-outline-variant bg-white p-4" open>
               <summary className="flex cursor-pointer list-none items-center justify-between font-h3 text-h3">
                 <span>How long are the enterprise training programs?</span>
-                <span className="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                <span className="text-xl font-semibold transition-transform group-open:rotate-180">^</span>
               </summary>
               <div className="pt-4 font-body-md text-on-surface-variant">Our programs range from intensive 2-day workshops to comprehensive 6-month continuous learning tracks, depending on the domain and depth required.</div>
             </details>
             <details className="group rounded-xl border border-outline-variant bg-white p-4">
               <summary className="flex cursor-pointer list-none items-center justify-between font-h3 text-h3">
                 <span>Can the curriculum be customized for our industry?</span>
-                <span className="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                <span className="text-xl font-semibold transition-transform group-open:rotate-180">^</span>
               </summary>
               <div className="pt-4 font-body-md text-on-surface-variant">Yes, customization is a key part of our service. We adapt case studies, examples, and toolsets to match your specific industry vertical.</div>
             </details>
             <details className="group rounded-xl border border-outline-variant bg-white p-4">
               <summary className="flex cursor-pointer list-none items-center justify-between font-h3 text-h3">
                 <span>What kind of support is provided post-training?</span>
-                <span className="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                <span className="text-xl font-semibold transition-transform group-open:rotate-180">^</span>
               </summary>
               <div className="pt-4 font-body-md text-on-surface-variant">We provide 3 months of implementation support, office hours for alumni, and detailed progress reports for HR stakeholders.</div>
             </details>
