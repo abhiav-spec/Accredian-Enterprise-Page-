@@ -8,15 +8,15 @@ export function Hero() {
         </p>
         <div className="mb-10 space-y-4">
           <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined icon-filled text-primary">check_circle</span>
+            <span className="text-xl font-semibold text-black">✓</span>
             <span className="font-label-md text-label-md">Tailored Solutions</span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined icon-filled text-primary">check_circle</span>
+            <span className="text-xl font-semibold text-black">✓</span>
             <span className="font-label-md text-label-md">Industry Insights</span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="material-symbols-outlined icon-filled text-primary">check_circle</span>
+            <span className="text-xl font-semibold text-black">✓</span>
             <span className="font-label-md text-label-md">Expert Guidance</span>
           </div>
         </div>
