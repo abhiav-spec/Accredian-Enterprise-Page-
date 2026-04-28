@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { LeadForm } from '@/app/components/forms/LeadForm';
 
 export function Hero() {
@@ -41,10 +42,13 @@ export function Hero() {
         </div>
         <div className="relative flex-1">
           <div className="absolute -left-4 -top-4 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
-          <img
+          <Image
             alt="Corporate Team Working"
             className="relative z-10 aspect-[4/3] w-full rounded-xl object-cover shadow-2xl"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ3nN2lNnMdRHsyyvw4t3fPGgn8moLtMCH8id1ejfoOfFtFjg_OdjPp0dmUO-ay72_XPdE3Xb0QYjqIO6DVfAdTQrurSg5w3It5GWFMRYuk0IduUvH8zmOuBZnIh-vhVvvN5oTWBOsVNoKlTdHWI353jgOyrYWjcVZ-k8EFpLfB93QhVFsc-bbaJ4ErlzdAgxUxD51E_HhenZht3DgP2ymjEcQXrJes4ExVtx4LXLf2689NC-9tEExo01Fs78gnGL9FUnOa315Z2kj"
+            width={800}
+            height={600}
+            priority
           />
         </div>
       </section>
