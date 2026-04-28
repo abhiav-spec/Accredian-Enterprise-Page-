@@ -4,7 +4,7 @@ import { Navbar } from '@/app/components/layout/Navbar';
 import { Footer } from '@/app/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'EduEnterprise | Human Capital Management',
+  title: 'Accredian | Human Capital Management',
   description: 'Cultivate high-performance teams through enterprise human capital solutions.',
 };
 
