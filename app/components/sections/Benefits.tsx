@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export function Benefits() {
   const [activeFaqTab, setActiveFaqTab] = useState<'course' | 'delivery' | 'misc'>('course');
@@ -80,10 +81,12 @@ export function Benefits() {
           </div>
           <div className="flex-1">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img
+              <Image
                 alt="Training Session"
                 className="h-full w-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmBQzExzJknncbCFEc3cRkPR2Z7a-EisbniDIaa5myetzlOPRCkXbLf2JVudCyOYcvMG-cD7QKm4MU5P27UmpVhV3dH_tzKfKUfFjag95DvvV7OSiochpwrJUfOFJTA7Yb0x2f_f-SASMDRo2msrGo5_Q9yiyM4oGnyYgaVrFw77XqO9KU96HaiA3xCNS4ciDdD-_6WAlznPpaPyvjqqOEStrVVxL69BxZJ2cFvgoM-trn9mR6m6Hno_A9p8IQVoY8gaCL0gc-Tthk"
+                width={600}
+                height={800}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             </div>

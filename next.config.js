@@ -3,7 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: false,
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
+    ],
   },
   swcMinify: true,
 };
