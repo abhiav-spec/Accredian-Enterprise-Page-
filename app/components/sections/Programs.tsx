@@ -28,7 +28,7 @@ export function Programs() {
               }`}
             >
               <div className={`mb-4 flex items-center justify-center rounded-lg transition-all duration-300 ${
-                selectedProgram === program.id ? 'h-32 w-32 bg-primary text-white text-5xl' : 'h-24 w-24 bg-primary/10 text-primary text-3xl'
+                selectedProgram === program.id ? 'h-24 w-56 bg-primary text-white text-5xl' : 'h-20 w-40 bg-primary/10 text-primary text-3xl'
               }`}>
                 <span className="material-symbols-outlined">{program.icon}</span>
               </div>
