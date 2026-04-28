@@ -24,7 +24,7 @@ export function Hero() {
           <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-pulse transition-opacity duration-300" />
           <span className="relative flex items-center justify-center gap-2">
             Enquire Now
-            <span className="material-symbols-outlined text-xl transition-transform group-hover:-translate-x-1">arrow_back</span>
+            <span className="text-xl font-bold text-black transition-transform group-hover:-translate-x-1">←</span>
           </span>
         </button>
       </div>
