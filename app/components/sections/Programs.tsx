@@ -28,9 +28,9 @@ export function Programs() {
               }`}
             >
               <div className={`mb-4 flex items-center justify-center rounded-lg transition-all duration-300 ${
-                selectedProgram === program.id ? 'h-24 w-24 bg-primary text-white text-4xl' : 'h-16 w-16 bg-primary/10 text-primary text-2xl'
+                selectedProgram === program.id ? 'h-32 w-32 bg-primary text-white text-5xl' : 'h-24 w-24 bg-primary/10 text-primary text-3xl'
               }`}>
-                <span className={`material-symbols-outlined ${selectedProgram === program.id ? 'text-3xl' : ''}`}>{program.icon}</span>
+                <span className="material-symbols-outlined">{program.icon}</span>
               </div>
               <h4 className={`mb-2 transition-all duration-300 ${selectedProgram === program.id ? 'font-h1 text-h1' : 'font-h3 text-h3'}`}>
                 {program.title}
