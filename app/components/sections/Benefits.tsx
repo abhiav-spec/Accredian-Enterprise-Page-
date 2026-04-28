@@ -1,7 +1,7 @@
 export function Benefits() {
   return (
     <>
-      <section className="mx-auto max-w-[1200px] px-gutter py-xl">
+      <section id="framework" className="mx-auto max-w-[1200px] scroll-mt-28 px-gutter py-xl">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-h1 text-h1">The CAT Framework</h2>
           <p className="mx-auto max-w-2xl font-body-lg text-body-lg text-on-surface-variant">Our unique 3-step pedagogical approach designed for deep learning and immediate professional application.</p>
@@ -67,7 +67,7 @@ export function Benefits() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1200px] px-gutter py-xl">
+      <section id="faq" className="mx-auto max-w-[1200px] scroll-mt-28 px-gutter py-xl">
         <h2 className="mb-16 text-center font-h1 text-h1">Frequently Asked Questions</h2>
         <div className="grid grid-cols-1 gap-gutter md:grid-cols-3">
           <div className="space-y-2 md:col-span-1">

@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section className="mx-auto flex max-w-[1200px] flex-col items-center gap-12 px-gutter py-xl md:flex-row">
+    <section id="home" className="mx-auto flex max-w-[1200px] scroll-mt-28 flex-col items-center gap-12 px-gutter py-xl md:flex-row">
       <div className="flex-1">
         <h1 className="mb-6 font-display text-display text-on-background">Next-Gen Expertise For Your Enterprise</h1>
         <p className="mb-8 max-w-xl font-body-lg text-body-lg text-on-surface-variant">

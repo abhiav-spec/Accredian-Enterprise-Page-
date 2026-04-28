@@ -2,7 +2,7 @@ import { LeadForm } from '@/app/components/forms/LeadForm';
 
 export function CTA() {
   return (
-    <section className="mx-auto mb-xl max-w-[1200px] px-gutter">
+    <section id="contact" className="mx-auto mb-xl max-w-[1200px] scroll-mt-28 px-gutter">
       <div className="relative overflow-hidden rounded-2xl bg-primary p-xl text-center text-on-primary shadow-2xl">
         <div className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
         <h2 className="relative z-10 mb-6 font-display text-display">Want to Learn More About Our Training Solutions?</h2>

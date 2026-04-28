@@ -22,11 +22,11 @@ export function Navbar() {
           priority
         />
         <div className="hidden gap-8 md:flex">
-          <a className="border-b-2 border-blue-600 pb-1 font-bold tracking-tight text-blue-600 antialiased dark:text-blue-400" href="#">Solutions</a>
-          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#">Expertise</a>
-          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#">Framework</a>
-          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#">Results</a>
-          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#">FAQ</a>
+          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#home">Home</a>
+          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#expertise">Expertise</a>
+          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#framework">Framework</a>
+          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#contact">Contact</a>
+          <a className="font-medium tracking-tight text-slate-600 antialiased transition-colors hover:text-blue-600 dark:text-slate-400" href="#faq">FAQ</a>
         </div>
         <div className="flex items-center gap-4">
           <button className="rounded-lg px-5 py-2 font-medium text-slate-600 transition-all duration-200 hover:bg-slate-50 dark:text-slate-400 dark:hover:bg-slate-900">Login</button>
