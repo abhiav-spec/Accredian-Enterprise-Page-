@@ -27,8 +27,8 @@ export function Programs() {
                   : 'hover:shadow-xl shadow-sm'
               }`}
             >
-              <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-all duration-300 ${
-                selectedProgram === program.id ? 'h-16 w-16 bg-primary text-white text-2xl' : ''
+              <div className={`mb-4 flex items-center justify-center rounded-lg transition-all duration-300 ${
+                selectedProgram === program.id ? 'h-24 w-24 bg-primary text-white text-4xl' : 'h-16 w-16 bg-primary/10 text-primary text-2xl'
               }`}>
                 <span className={`material-symbols-outlined ${selectedProgram === program.id ? 'text-3xl' : ''}`}>{program.icon}</span>
               </div>
