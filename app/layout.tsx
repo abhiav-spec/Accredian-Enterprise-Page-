@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Navbar } from '@/app/components/layout/Navbar';
+import { Footer } from '@/app/components/layout/Footer';
 
 export const metadata: Metadata = {
-  title: 'Accredian - Enterprise Solution',
-  description: 'Accredian Enterprise Page',
+  title: 'EduEnterprise | Human Capital Management',
+  description: 'Cultivate high-performance teams through enterprise human capital solutions.',
 };
 
 export default function RootLayout({
@@ -13,8 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="text-on-surface">
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
