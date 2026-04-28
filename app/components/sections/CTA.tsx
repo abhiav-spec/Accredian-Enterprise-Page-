@@ -11,7 +11,7 @@ export function CTA() {
           <span className="absolute inset-0 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-10 group-hover:animate-pulse transition-opacity duration-300" />
           <span className="relative flex items-center justify-center gap-2">
             Contact Us
-            <span className="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+            <span className="material-symbols-outlined text-xl transition-transform group-hover:-translate-x-1">arrow_back</span>
           </span>
         </button>
       </div>
