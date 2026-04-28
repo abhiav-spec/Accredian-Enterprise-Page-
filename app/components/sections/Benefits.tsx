@@ -1,4 +1,28 @@
+'use client';
+
+import { useState } from 'react';
+
 export function Benefits() {
+  const [activeFaqTab, setActiveFaqTab] = useState<'course' | 'delivery' | 'misc'>('course');
+
+  const faqData = {
+    course: [
+      { q: 'How long are the enterprise training programs?', a: 'Our programs range from intensive 2-day workshops to comprehensive 6-month continuous learning tracks, depending on the domain and depth required.' },
+      { q: 'Can the curriculum be customized for our industry?', a: 'Yes, customization is a key part of our service. We adapt case studies, examples, and toolsets to match your specific industry vertical.' },
+      { q: 'What kind of support is provided post-training?', a: 'We provide 3 months of implementation support, office hours for alumni, and detailed progress reports for HR stakeholders.' },
+    ],
+    delivery: [
+      { q: 'What delivery modes do you offer?', a: 'We offer virtual, in-person, and hybrid training options tailored to your enterprise needs and scheduling preferences.' },
+      { q: 'Can we conduct training during business hours?', a: 'Yes, we work with your team to schedule training at times that minimize disruption to your operations.' },
+      { q: 'Is live instructor interaction included?', a: 'Absolutely. All our programs feature live expert instructors who provide real-time feedback and guidance throughout the training.' },
+    ],
+    misc: [
+      { q: 'Do you provide training materials and resources?', a: 'Yes, we provide comprehensive training materials, slide decks, workbooks, and online resources available after the training concludes.' },
+      { q: 'What is your approach to measuring training effectiveness?', a: 'We use multiple metrics including pre/post assessments, behavioral observations, and 90-day impact reviews to measure training effectiveness.' },
+      { q: 'Can we integrate training with our existing learning management system?', a: 'Yes, we can integrate our training programs with your LMS and provide tracking data for seamless administration.' },
+    ],
+  };
+
   return (
     <>
       <section id="framework" className="mx-auto max-w-[1200px] scroll-mt-28 px-gutter py-xl">
@@ -71,32 +95,47 @@ export function Benefits() {
         <h2 className="mb-16 text-center font-h1 text-h1">Frequently Asked Questions</h2>
         <div className="grid grid-cols-1 gap-gutter md:grid-cols-3">
           <div className="space-y-2 md:col-span-1">
-            <button className="w-full rounded-lg bg-primary-container px-6 py-4 text-left font-label-md text-white">About the Course</button>
-            <button className="w-full rounded-lg px-6 py-4 text-left font-label-md transition-colors hover:bg-surface-container">About the Delivery</button>
-            <button className="w-full rounded-lg px-6 py-4 text-left font-label-md transition-colors hover:bg-surface-container">Miscellaneous</button>
+            <button
+              onClick={() => setActiveFaqTab('course')}
+              className={`w-full rounded-lg px-6 py-4 text-left font-label-md transition-all ${
+                activeFaqTab === 'course'
+                  ? 'bg-primary-container text-white'
+                  : 'bg-white hover:bg-surface-container'
+              }`}
+            >
+              About the Course
+            </button>
+            <button
+              onClick={() => setActiveFaqTab('delivery')}
+              className={`w-full rounded-lg px-6 py-4 text-left font-label-md transition-all ${
+                activeFaqTab === 'delivery'
+                  ? 'bg-primary-container text-white'
+                  : 'bg-white hover:bg-surface-container'
+              }`}
+            >
+              About the Delivery
+            </button>
+            <button
+              onClick={() => setActiveFaqTab('misc')}
+              className={`w-full rounded-lg px-6 py-4 text-left font-label-md transition-all ${
+                activeFaqTab === 'misc'
+                  ? 'bg-primary-container text-white'
+                  : 'bg-white hover:bg-surface-container'
+              }`}
+            >
+              Miscellaneous
+            </button>
           </div>
           <div className="space-y-4 md:col-span-2">
-            <details className="group rounded-xl border border-outline-variant bg-white p-4" open>
-              <summary className="flex cursor-pointer list-none items-center justify-between font-h3 text-h3">
-                <span>How long are the enterprise training programs?</span>
-                <span className="text-xl font-semibold transition-transform group-open:rotate-180">^</span>
-              </summary>
-              <div className="pt-4 font-body-md text-on-surface-variant">Our programs range from intensive 2-day workshops to comprehensive 6-month continuous learning tracks, depending on the domain and depth required.</div>
-            </details>
-            <details className="group rounded-xl border border-outline-variant bg-white p-4">
-              <summary className="flex cursor-pointer list-none items-center justify-between font-h3 text-h3">
-                <span>Can the curriculum be customized for our industry?</span>
-                <span className="text-xl font-semibold transition-transform group-open:rotate-180">^</span>
-              </summary>
-              <div className="pt-4 font-body-md text-on-surface-variant">Yes, customization is a key part of our service. We adapt case studies, examples, and toolsets to match your specific industry vertical.</div>
-            </details>
-            <details className="group rounded-xl border border-outline-variant bg-white p-4">
-              <summary className="flex cursor-pointer list-none items-center justify-between font-h3 text-h3">
-                <span>What kind of support is provided post-training?</span>
-                <span className="text-xl font-semibold transition-transform group-open:rotate-180">^</span>
-              </summary>
-              <div className="pt-4 font-body-md text-on-surface-variant">We provide 3 months of implementation support, office hours for alumni, and detailed progress reports for HR stakeholders.</div>
-            </details>
+            {faqData[activeFaqTab].map((item, idx) => (
+              <details key={idx} className="group rounded-xl border border-outline-variant bg-white p-4">
+                <summary className="flex cursor-pointer list-none items-center justify-between font-h3 text-h3">
+                  <span>{item.q}</span>
+                  <span className="text-xl font-semibold transition-transform group-open:rotate-180">^</span>
+                </summary>
+                <div className="pt-4 font-body-md text-on-surface-variant">{item.a}</div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
